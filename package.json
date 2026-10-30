@@ -1,0 +1,14 @@
+{
+  "name": "ghl-crm-automation-kit",
+  "version": "1.0.0",
+  "description": "GoHighLevel speed-to-lead routing, follow-up tasks and pipeline KPI dashboard.",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env webhook.js",
+    "report": "node --env-file-if-exists=.env scripts/kpi-report.js",
+    "report:sample": "node scripts/kpi-report.js --sample",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=22" },
+  "license": "MIT"
+}
